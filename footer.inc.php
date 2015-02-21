@@ -6,7 +6,7 @@
 				<span class="fa-stack fa-lg">
 					<i class="fa fa-square-o fa-stack-2x"></i>
 					<i class="fa fa-connectdevelop fa-stack-1x"></i>
-				</span>z1q.ru 
+				</span>Tech.z1q.ru 
 			</a>
 			&copy; <? if(date('Y') > '2015') { echo '2015 -';} echo date('Y'); ?>
 			<? include $_SERVER['DOCUMENT_ROOT']."/inc/count.inc.php";?>
