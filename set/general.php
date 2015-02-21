@@ -4,18 +4,18 @@
 
 
 //Отображение ошибок//////////////////////
-// ini_set("display_errors","1");			//
-// ini_set("display_startup_errors","1");	//
-// ini_set('error_reporting', E_ALL);		//
+ini_set("display_errors","0");			//
+ini_set("display_startup_errors","0");	//
+ini_set('error_reporting', E_ALL);		//
 //////////////////////////////////////////
 //STAT SETTINGS
 $tstart=microtime(1); // Засекаем начальное время
-$SiteID = 2;					//ID сайта
-$testing = 1; 					//отладочная информация 0/1
+$SiteID = 1;					//ID сайта
+$testing = 0; 					//отладочная информация 0/1
 $longPass = 6;					//Длинна генерируемого пароля
-// $stepList = 15;					//размер шага
+$version = 'v 0.1b';			//Версия
 
-include $_SERVER['DOCUMENT_ROOT']."/settings/DB_main.php";
+// include $_SERVER['DOCUMENT_ROOT']."/settings/DB_main.php";
 ///////////// ф-ция редиректа
 function rdr($par) { //F-ciya redirect s parametrom
 	header("Location:" . $par);
@@ -43,14 +43,6 @@ if (isset($_GET['p'])) {
 
 
 /*
- session_start();
-
-  unset($_SESSION['username']); // разрегистрировали переменную
-
-  echo 'Привет, '.$_SESSION['username'];
-
-  //теперь имя пользователя уже не выводится 
-
   session_destroy(); // разрушаем сессию
 */
 $act = $_GET['act']; //определение дествий

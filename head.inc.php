@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title></title>
-<link href="/css/bootstrap.min.css" rel="stylesheet" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<title><?=$arVar[$page][1]?> - помощь для начинающий</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://malsup.github.com/jquery.form.js"></script>
@@ -19,7 +19,7 @@
     <!-- ################# -->
 	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="/css/main.css" rel="stylesheet" type="text/css" />
-	<script src="/js/my.js?v0.05"></script>
+	<script src="/js/my.js?v0.01"></script>
 	<!-- ################# -->
 	
 	<?if ($page == 'gallery') {?>

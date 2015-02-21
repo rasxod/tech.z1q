@@ -8,15 +8,16 @@
 */
 
 ob_start();
-include $_SERVER['DOCUMENT_ROOT']."/settings/general.php";
+include $_SERVER['DOCUMENT_ROOT']."/set/general.php";
 include $_SERVER['DOCUMENT_ROOT']."/head.inc.php";
+include $_SERVER['DOCUMENT_ROOT']."/menu.inc.php";
 ?>
-<div id="wrap">
+<div id="wrap" class="container">
 	<? 
-	include $_SERVER['DOCUMENT_ROOT']."/menu.inc.php";
 	$incPage = $page.".inc.php";
 	include "$incPage";
 	?>
+</div>
 
 <?php
 include $_SERVER['DOCUMENT_ROOT']."/footer.inc.php";

@@ -1,0 +1,26 @@
+.shIMG img {
+	margin: 5px;
+}
+.shIMG img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	padding: 4px;
+	line-height: 1.42857143;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	border-radius: 4px;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.tooltip {min-width: 150px;}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+sup {font-style: italic;}
