@@ -1,7 +1,8 @@
 <?
 $arVar = array(
 	'index' => array('Main', 'Главная'),
-	'image' => array('Image&Baners', 'Изображения и банеры')
+	'image' => array('Image&Baners', 'Изображения и банеры'),
+	'blogurl' => array('BlogUrl', 'Кнопочка на другой сайт')
 );
 
 function getMT($page) {

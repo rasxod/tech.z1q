@@ -29,17 +29,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </div>
 
 <?
-$myIMG = "<a href=\"".$_SESSION['siteUrl']."\">
+$myResalt = "<a href=\"".$_SESSION['siteUrl']."\">
     <img src=\"".$_SESSION['imgAdr']."\" alt=\"".$_SESSION['altImg']."\" width=\"".$_SESSION['wImg']."\"/>
 </a>";
 ?>
 
 <div class="row">
-  <textarea rows="10" cols="100" class="form-control col-md-8 col-md-offset-1" style="margin: 26px;"><?=$myIMG;?></textarea>
+  <textarea rows="10" cols="100" class="form-control col-md-8 col-md-offset-1" style="margin: 26px;"><?=$myResalt;?></textarea>
 </div>
 
 <div class="row shIMG">
-  <div class="col-md-11">
-    <?=$myIMG;?>  
+  <span class="prspan">пример</span>
+  <div class="col-md-11 primer">
+    <?=$myResalt;?>  
   </div>
 </div>
