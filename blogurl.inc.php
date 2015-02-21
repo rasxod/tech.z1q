@@ -8,11 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <form class="form-horizontal col-md-8 col-md-offset-1" role="form" action="/blogurl/" method='POST'>
   <div class="form-group">
     <label for="blogurl">Ссылка на блог</label>
-    <input type="text" class="form-control" id="blogurl" name="blogurl" placeholder="Введите адрес картинки"  value="<?=$_SESSION['blogurl'];?>" />
+    <input type="text" class="form-control" id="blogurl" name="blogurl" placeholder="Введите адрес блога"  value="<?=$_SESSION['blogurl'];?>" />
   </div>
   <div class="form-group">
     <label for="textBut">Подпись ссылки</label>
-    <input type="text" class="form-control" id="textBut" name="textBut" placeholder="Url на сайт"  value="<?=$_SESSION['textBut'];?>" />
+    <input type="text" class="form-control" id="textBut" name="textBut" placeholder="Надпись которая отобразиться ссылкой"  value="<?=$_SESSION['textBut'];?>" />
   </div>
   <button type="submit" class="btn btn-success">Submit</button>
 </form>
