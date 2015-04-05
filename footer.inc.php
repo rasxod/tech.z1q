@@ -28,7 +28,7 @@ if ($testing == 1 ) {
 }
 ?>
 <script>
-document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
+document.write('<script src="http://sharebutton.net/plugin/sharebutton.php?type=horizontal&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
 </script>
 </body>
 </html>

@@ -2,7 +2,8 @@
 $arVar = array(
 	'index' => array('Main', 'Главная'),
 	'image' => array('Image&Baners', 'Изображения и банеры'),
-	'blogurl' => array('BlogUrl', 'Кнопочка на другой сайт')
+	'blogurl' => array('BlogUrl', 'Кнопочка на другой сайт'),
+	'converter' => array('Converter', 'преобразователь SapeToLiex')
 );
 
 function getMT($page) {
