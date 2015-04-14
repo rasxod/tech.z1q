@@ -13,7 +13,7 @@ $tstart=microtime(1); // Засекаем начальное время
 $SiteID = 1;					//ID сайта
 $testing = 0; 					//отладочная информация 0/1
 $longPass = 6;					//Длинна генерируемого пароля
-$version = 'v 0.26b';			//Версия
+$version = 'v 0.27b';			//Версия
 
 // include $_SERVER['DOCUMENT_ROOT']."/settings/DB_main.php";
 ///////////// ф-ция редиректа

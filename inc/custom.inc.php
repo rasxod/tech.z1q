@@ -3,7 +3,8 @@ $arVar = array(
 	'index' => array('Main', 'Главная'),
 	'image' => array('Image&Baners', 'Изображения и банеры'),
 	'blogurl' => array('BlogUrl', 'Кнопочка на другой сайт'),
-	'converter' => array('Converter', 'преобразователь SapeToLiex')
+	'converter' => array('Converter', 'преобразователь SapeToLiex'),
+	'convtext' => array('ConvText', 'Добавление ссылок в текст')
 );
 
 function getMT($page) {
