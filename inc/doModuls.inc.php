@@ -7,7 +7,7 @@ if ($act == 'testPR') {
 	$url='http://z1q.ru/forGetProxy.php';
  
 	//Адрес прокси с портом
-	$proxy=trim($_POST['prUrl']);
+	$proxy=trim($_POST['prUrl'].':'.$_POST['port']);
  
 	// //Пользователь
 	// $user="VasilevPS";
@@ -31,11 +31,27 @@ if ($act == 'testPR') {
 	 
 	//Очищаем память
 	curl_close($ch);
- 	// $result = preg_replace("|<pre>(.+?)</pre>|isU","",$result);
- 	preg_match('|<pre.*?>(.*)</pre>|sei', $result, $arr);
- 	$result = $arr[1];
+ 	
+ 	if(preg_match('|<pre.*?>(.*)</pre>|sei', $result, $arr)) {
+ 		$res = 'Работает :) <hr />'.$arr[1];
+ 	} else {
+ 		$res = 'Неработает :( <hr />'.file_get_contents($proxy);
+ 	}
+ 	// $result = file_get_contents($url);
 	//смотрим что получилось
-	echo json_encode($result);
+	echo json_encode($res);
 
+}
+
+if ($act == 'parseurl') {
+	$links = explode("\n", $_POST['soursText']);
+	$nLinks = array();
+	foreach ($links as $key => $LI) {
+		$nLinks[] = parse_url($LI, constant($_POST['wathUrl'])).'<br>';
+	}
+	$nLinks = array_unique($nLinks);
+	foreach ($nLinks as $key => $NLI) {
+		echo $_POST['addText'].$NLI;
+	}
 }
 ?>

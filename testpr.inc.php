@@ -1,7 +1,8 @@
 <div class="row">
 	<div class="form-group">
 		<label for="prUrl">Url прокси</label>
-		<input type="text" class="form-control" id="prUrl" placeholder="127.0.0.1:8080"  value="" />
+		<input type="text" class="form-control" id="prUrl" placeholder="адрес 127.0.0.1"  value="" />
+		<input type="text" class="form-control" id="port" placeholder="Порт 8080"  value="" />
 	</div>
 	<button type="submit" class="btn btn-success testPR">Проверить</button>
 </div>

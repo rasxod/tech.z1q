@@ -5,6 +5,7 @@ $arVar = array(
 	'blogurl' => array('BlogUrl', 'Кнопочка на другой сайт'),
 	'converter' => array('Converter', 'преобразователь SapeToLiex'),
 	'convtext' => array('ConvText', 'Добавление ссылок в текст'),
+	'parseurl' => array('ParseUrl', 'получить список доменов из ссылок'),
         'testpr' => array('Test Proxy', 'Проверка прокси сервера')
     );
 
