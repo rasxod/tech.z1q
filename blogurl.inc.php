@@ -19,9 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </div>
 
 <?
-$myResalt = "<a href=\"".$_SESSION['blogurl']."\" target=\"_blank\">
-   ".$_SESSION['textBut']."
-</a>";
+$myResalt = "<a href=\"".$_SESSION['blogurl']."\">".$_SESSION['textBut']."</a>";
 ?>
 
 <div class="row">
